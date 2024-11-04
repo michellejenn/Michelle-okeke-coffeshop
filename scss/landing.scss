@@ -1,0 +1,230 @@
+@use "./partials/global" as *;;
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
+
+@keyframes canrotation{
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
+
+@keyframes discountcodeflash{
+    0%{
+        background-color: #393939;
+
+    }
+    100%{
+        background-color:  #5bacc3;
+    }
+}
+
+.hero{
+    background-color: #fff0ed;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    &__article{
+        width: 25%;
+        padding-top: 10rem;
+    }
+    &__button{
+        position: relative;
+        &--detail{
+            position:absolute;
+            border: 0.1rem solid black;
+            padding: 1.5rem 3rem;
+            width: 12rem;
+            top: -1.2rem;
+            left: -0.3rem;
+        }
+    }
+
+}
+
+.products{
+    background-color: #f7f7f7;
+    padding: 3rem 5rem;
+    &__title{
+        display: flex;
+        justify-content: center;
+    }
+    &__body{
+        display: flex;
+        align-items: baseline;
+    }
+    &__item{
+        width: 200rem;
+        margin: 2rem;
+        border-radius: 0.65rem;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.25);
+    }
+    &__img{
+        background-color: white;
+        display:flex;
+        justify-content: center;
+        padding: 2rem 0rem;
+    }
+    &__image{
+        height: 14.88rem;
+    }
+    &__stats{
+        background-color: #fff0ed;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__structure{
+        color: gray;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        &--view{
+            position: relative;
+        }
+        &--detail{
+            position:absolute;
+            border: 0.1rem solid black;
+            padding: 1.5rem 3rem;
+            width: 12rem;
+            top: -0.3rem;
+            left: -0.3rem;
+        }
+    }
+}
+
+.discount{
+    &__section{
+        display: flex;
+        padding: 5rem;
+    }
+    &__section1{
+        width: 55%;
+    }
+    &__header{
+        font-size: 3rem;
+        font-weight: 300;
+    }
+    &__images{
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+    &__image{
+        width: 3rem;
+    }
+    &__tag{
+        &--button{
+            position: relative;
+        }
+        &--detail{
+            position: absolute;
+            border: 0.1rem solid black;
+            padding: 2rem 3rem;
+            width: 12rem;
+            top: -0.3rem;
+            left: -0.3rem;
+        }
+    }
+    &__tiltedcan{
+        background-image: url("../assets/images/coldbrewbackground.png");
+        width: 28rem;
+        margin: 1.25px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        padding: 3.5rem;
+        position: relative;
+        &--candetail{
+            width: 25rem;
+            padding: 13rem 4rem;
+            border: 0.2rem solid #5bacc3;
+            position:absolute;
+            top: -0.7rem;
+            right: 0.8rem;
+        }
+        &:hover .discount__can{
+            animation: canrotation 2s linear infinite;
+        }
+            
+    }
+  
+    &__writeup{
+        background-color: white;
+    }
+    &__product{
+        background-color: #393939;
+        color: white;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        margin: 5rem;
+        animation: discountcodeflash 2.5s infinite alternate;
+        
+
+    }
+    &__code{
+        font-size: 3rem;
+        font-weight: 300;
+        margin: 0;
+        padding:2rem;
+        
+        
+    }
+    &__span{
+        font-weight: 700;
+    }
+    }
+
+    .footer{
+        background-color: #fff0ed;
+        width:100%;
+        padding: 2.5rem 0rem;
+        display: flex;
+        justify-content: space-around;
+        &__items{
+            width: 16%
+        }
+        &__logo1{
+            width: 50px;
+            padding: 0;
+            position: relative;
+            left: -8.5rem;
+            opacity: 0.25;
+        }
+        &__info{
+            margin: 0;
+            padding:0;
+        }
+        &__days{
+            font-weight:bold;
+        }
+        &__icon{
+            width: 3.13rem;
+        }
+        &__logo2{
+            width: 50px;
+            padding: 0;
+            position: relative;
+            right: -9rem;
+            opacity: 0.25;
+        }
+    }
+
+
+
+
+
+    
+
+
+        
+
+
+
+

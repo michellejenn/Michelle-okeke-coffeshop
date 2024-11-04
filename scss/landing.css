@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0rem;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  color: #393939;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 3.3rem;
+}
+
+.hero__title {
+  font-weight: light 300;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+.header__link {
+  font-weight: normal 400;
+  font-size: 1.3rem;
+}
+
+p {
+  font-weight: normal 400;
+  font-size: 1.3rem;
+}
+
+.footer__title {
+  font-size: 2rem;
+  font-weight: light 300;
+}
+
+.header__nitro {
+  color: #393939;
+  font-weight: lighter;
+}
+
+.header__item {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.price {
+  color: #5bacc3;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.button {
+  font-size: 1rem;
+  font-weight: normal 400;
+  background-color: #5bacc3;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  width: 12rem;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+
+.button:active {
+  transform: scale(0.95);
+  background-color: black;
+}
+
+.button:hover {
+  transform: scale(0.9);
+  background-color: black;
+}
+
+.header {
+  background-color: #fff0ed;
+  display: flex;
+  padding: 1rem;
+}
+
+.header__nav1 {
+  display: flex;
+}
+
+.header__nitro {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.discount__products {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.header__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header__item {
+  margin: 1rem 1rem;
+}
+
+.header__nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__link {
+  color: inherit;
+}
+
+.header__link--shop {
+  color: #5bacc3;
+}
+
+@keyframes canrotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes discountcodeflash {
+  0% {
+    background-color: #393939;
+  }
+  100% {
+    background-color: #5bacc3;
+  }
+}
+.hero {
+  background-color: #fff0ed;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.hero__article {
+  width: 25%;
+  padding-top: 10rem;
+}
+.hero__button {
+  position: relative;
+}
+.hero__button--detail {
+  position: absolute;
+  border: 0.1rem solid black;
+  padding: 1.5rem 3rem;
+  width: 12rem;
+  top: -1.2rem;
+  left: -0.3rem;
+}
+
+.products {
+  background-color: #f7f7f7;
+  padding: 3rem 5rem;
+}
+.products__title {
+  display: flex;
+  justify-content: center;
+}
+.products__body {
+  display: flex;
+  align-items: baseline;
+}
+.products__item {
+  width: 200rem;
+  margin: 2rem;
+  border-radius: 0.65rem;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.25);
+}
+.products__img {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0rem;
+}
+.products__image {
+  height: 14.88rem;
+}
+.products__stats {
+  background-color: #fff0ed;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.products__structure {
+  color: gray;
+}
+.products__button {
+  display: flex;
+  justify-content: center;
+}
+.products__button--view {
+  position: relative;
+}
+.products__button--detail {
+  position: absolute;
+  border: 0.1rem solid black;
+  padding: 1.5rem 3rem;
+  width: 12rem;
+  top: -0.3rem;
+  left: -0.3rem;
+}
+
+.discount__section {
+  display: flex;
+  padding: 5rem;
+}
+.discount__section1 {
+  width: 55%;
+}
+.discount__header {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.discount__images {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+.discount__image {
+  width: 3rem;
+}
+.discount__tag--button {
+  position: relative;
+}
+.discount__tag--detail {
+  position: absolute;
+  border: 0.1rem solid black;
+  padding: 2rem 3rem;
+  width: 12rem;
+  top: -0.3rem;
+  left: -0.3rem;
+}
+.discount__tiltedcan {
+  background-image: url("../assets/images/coldbrewbackground.png");
+  width: 28rem;
+  margin: 1.25px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 3.5rem;
+  position: relative;
+}
+.discount__tiltedcan--candetail {
+  width: 25rem;
+  padding: 13rem 4rem;
+  border: 0.2rem solid #5bacc3;
+  position: absolute;
+  top: -0.7rem;
+  right: 0.8rem;
+}
+.discount__tiltedcan:hover .discount__can {
+  animation: canrotation 2s linear infinite;
+}
+.discount__writeup {
+  background-color: white;
+}
+.discount__product {
+  background-color: #393939;
+  color: white;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+  animation: discountcodeflash 2.5s infinite alternate;
+}
+.discount__code {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 2rem;
+}
+.discount__span {
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #fff0ed;
+  width: 100%;
+  padding: 2.5rem 0rem;
+  display: flex;
+  justify-content: space-around;
+}
+.footer__items {
+  width: 16%;
+}
+.footer__logo1 {
+  width: 50px;
+  padding: 0;
+  position: relative;
+  left: -8.5rem;
+  opacity: 0.25;
+}
+.footer__info {
+  margin: 0;
+  padding: 0;
+}
+.footer__days {
+  font-weight: bold;
+}
+.footer__icon {
+  width: 3.13rem;
+}
+.footer__logo2 {
+  width: 50px;
+  padding: 0;
+  position: relative;
+  right: -9rem;
+  opacity: 0.25;
+}/*# sourceMappingURL=landing.css.map */

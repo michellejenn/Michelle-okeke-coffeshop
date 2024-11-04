@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/landing.css">
-    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./scss/landing.css">
+    <!-- <link rel="stylesheet" href="./css/global.css"> -->
     <title>Coffee Shop - Home</title>
 </head>
 <body>
+
     <header class="header">
-        
         <nav class="header__nav">
-            <a  href=""><img src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo" class="header__logo"></a>
-            <a href=""><h2 class="header__nitro">nitro</h2></a>
+            <section class="header__nav1">
+                <a class = header__logo href="../index.html"><img src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="coffee bean logo"></a>
+                <a class = nitro__link href="../index.html" ><h2 class="header__nitro">nitro</h2></a>
+            </section>
+            
             <ul class="header__list">
-                <li class="header__item"><a href="#" class="header__link">ABOUT</a></li>
-                <li class="header__item"><a href="./pages/menu.html" class="header__link">MENU</a></li>
-                <li class="header__item"><a href="./pages/menu.html" class="header__link header__link--shop">SHOP NOW</a></li>
+                <li class="header__item"><a href="../index.html" class="header__link">ABOUT</a></li>
+                <li class="header__item"><a href="#menu__items" class="header__link">MENU</a></li>
+                <li class="header__item"><a href="#" class="header__link header__link--shop">SHOP NOW</a></li>
             </ul>
+           
+           
         </nav>
     </header>
         
@@ -31,9 +36,15 @@
                 <p class="hero__definition">Coffee is a brewed drink prepared from roasted
                 coffee beans, the seeds of berries from certain coffee species
             </p>
-                <a class= hero__button href="./pages/menu.html"><button class="button button--shop">SHOP NOW</button></a>
+                <a class= "hero__button" href="./pages/menu.html">
+                    <button class="button hero--shop">SHOP NOW</button>
+                    <div class ="hero__button--detail">
+
+                    </div>
+                </a>
+                    
             </article>
-            <article class = image__article>
+            <article class = "image__article">
                 <img class = "hero__image" src="./assets/images/coffeebeans-hero.png" alt="coffee bag">
             </article>
         </section>
@@ -41,34 +52,121 @@
 
 
         <section class = "products">
-            <h2 class = "products__title">Our Products </h2>
-            <article class = "products__item">
-                <img class = "products__image" src="./assets/images/coffeebeans.png" alt="Coffee Beans image">
-                <h3 class = "products__name">Coffee Beans</h3>
-                <p class = "items__price">$18.99</p>
-            </article>
-            <article class = "products__item">
-                <img class = "products__image" src="./assets/images/coldbrew.png" alt="Cold Brew image">
-                <h3 class = "products__name">Cold Brew</h3>
-                <p class = "items__price">$4.99</p>
-            </article>
-            <article class = "products__item">
-                <img class = "products__image" src="./assets/images/inhousebrew.png" alt="In-house Brew image">
-                <h3 class = "products__name">In-house Brew</h3>
-                <p class = "items__price">$2.99</p>
-            </article>
-            <a href="./pages/menu.html"><button class="button button--view">VIEW ALL</button></a>
+            <section class = "products__heading">
+                <h2 class = "products__title">Our Products </h2>
+            </section>
+            <section class ="products__body">
+                <article class = "products__item">
+                    <section class ="products__img">
+                        <img class = "products__image" src="./assets/images/coffeebeans.png" alt="Coffee Beans image">
+                    </section>
+                    <section class = "products__stats">
+                        <div class ="products__stats1">
+                            <h3 class = "products__name">Coffee Beans</h3>
+                            <p class ="products__structure">Pack of 3</p>
+                        </div>
+                        <div class ="products__stats2">
+                            <p class = "price products__price">$19</p>
+                        </div>
+                    </section> 
+                </article>
 
+                <article class = "products__item">
+                    <section class ="products__img">
+                        <img class = "products__image" src="./assets/images/coldbrew.png" alt="Cold Brew image">
+                    </section>
+                    
+                    <section class = "products__stats">
+                        <div class="products__stats1">
+                            <h3 class = "products__name">Cold Brew</h3>
+                            <p class="products__structure">1 can</p>
+                        </div>
+                        <div class="products__stats2">
+                            <p class = "price products__price">$5</p>
+                        </div>   
+                    </section>
+                </article>
+
+                <article class = "products__item">
+                    <section class ="products__img">
+                        <img class = "products__image" src="./assets/images/inhousebrew.png" alt="In-house Brew image">
+                    </section>
+                    <section class = "products__stats">
+                        <div class="products__stats1">
+                            <h3 class = "products__name">In-house Brew</h3>
+                            <p class ="products__structure">1 cup</p>
+                        </div>
+                        <div class="products__stats2">
+                            <p class = "price products__price">$3</p>
+                        </div>
+                    </section>
+                </article>
+            </section>
+
+                <section class = "products__button">
+                    <a class=" products_tag" href="./pages/menu.html"><button class="button products__button--view">VIEW ALL
+                        <div class="products__button--detail">
+
+                        </div>
+                    </button>
+                    </a>
+                    
+                </section>
+                
+            </section>
+
+        <section class ="discount">
+            <section class = "discount__section">
+                <div>
+                    <section class="discount__section1">
+                        <article class ="discount__difference">
+                            <h3 class ="discount__header">We're Different</h3>
+                            <p class ="discount__paragraph">We grow and roast our own beans. Every bean, every cup, every step of the 
+                                way, we strive for excellence.
+                            </p>
+                        </article>
+                        <div class ="discount__images">
+                            <img class="discount__image" src="./assets/logos/planting.svg" alt="">
+                            <img class ="discount__image" src="./assets/logos/coffee-beans.svg" alt="">
+                            <img class ="discount__image" src="./assets/logos/coffee-cup.svg" alt="">
+                        </div>
+                        <a class = "discount__tag" href="./index.html"><button class="discount__tag--button button">
+                            Learn more
+                            <div class =discount__tag--detail>
+
+                            </div>
+                        </button></a>
+                        
+                        
+                    </section>
+                </div>
+                <div class =discount__tiltedcan>
+                    <section class="dicount__tiltedcan">
+                        <img class="discount__can" src="./assets/images/tiltedcan.png" alt="tilted can">
+                        <div class = discount__tiltedcan--candetail>
+                        </div>
+                    </section>
+                    
+                </div>
+                
+                
+                
+                
+            </section>   
+            
+            <section class = "discount__writeup">
+                <article class ="discount__product">
+                    <p class = "discount__code">Get 20% off your first order with code: <span class = discount__span>FirstNitro</span></p>
+                </article>
+            </section>
         </section>
-        <section class = "discount">
-            <article class ="products__discount">
-                <p class = "products__code">Get 20% off your first order with code: <span class = products__span>FirstNitro</span></p>
-            </article>
-        </section>
+        
         
     </main>
     <footer class = footer>
+        
         <section class = footer__items>
+            <img class = "footer__logo1" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="">
             <h3 class = footer__title>Address</h3>
             <p class = footer__info>503 Braodway Penthouse 
                 New York</p>
@@ -83,6 +181,8 @@
             <a class = "footer__link" href="https://www.facebook.com/"><img class = footer__icon src="./assets/logos/Facebook-Icon.svg" alt="Facebook icon"></a>
             <a class = "footer__link" href="https://www.yelp.com/"><img class = footer__icon src="./assets/logos/Yelp-Icon.svg" alt="Yelp icon"></a>
             <a class = "footer__link" href="https://www.instagram.com/"><img class = footer__icon src="./assets/logos/Instagram-Icon.svg" alt="Instagram icon"></a>
+            
+            <img class = "footer__logo2" src="./assets/logos/coffee-beans-logo-and-footer.svg" alt="">
 
         </section>
     </footer>
